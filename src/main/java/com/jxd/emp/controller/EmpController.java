@@ -101,4 +101,12 @@ public class EmpController {
         }
     }
 
+
+    @RequestMapping("/welcomeTo")
+    public String welcomeTo(Model model){
+        model.addAttribute("msg","改变了模板位置");
+        List<Dept> list = deptService.list();
+        model.addAttribute("list",list);
+        return "welcome.html";
+    }
 }
