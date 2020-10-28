@@ -101,10 +101,4 @@ public class EmpController {
         }
     }
 
-    @RequestMapping("/updateDept")
-    @ResponseBody
-    public boolean updateDept(Dept dept){
-        return deptService.updateById(dept);
-    }
-
 }
