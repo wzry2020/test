@@ -8,4 +8,6 @@ import java.util.List;
 public interface IDeptMapper extends BaseMapper<Dept> {
     //多表操作还得自己写
     List<Dept> selectDeptWith();
+
+    //int updateById(Dept dept);
 }

@@ -46,4 +46,12 @@ public class TestDao {
         }
     }
 
+    @Test
+    public void test2(){
+        Dept dept = new Dept();
+        dept.setDeptno(2);
+        dept.setDname("新闻部");
+        int num = deptMapper.updateById(dept);
+    }
+
 }

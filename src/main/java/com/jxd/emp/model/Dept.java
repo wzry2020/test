@@ -1,5 +1,7 @@
 package com.jxd.emp.model;
 
+import com.baomidou.mybatisplus.annotation.TableId;
+
 /**
  * @ClassName Dept
  * @Description TODO
@@ -8,6 +10,8 @@ package com.jxd.emp.model;
  * @Version 1.0
  */
 public class Dept {
+
+    @TableId
     private int deptno;
 
     public int getDeptno() {
